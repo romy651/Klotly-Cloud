@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "buzzmeet-3999d"
+  },
+  "targets": {},
+  "etags": {
+    "buzzmeet-3999d": {
+      "extensionInstances": {
+        "firestore-send-email": "385a968323b8093828edccea0571d77d037cda931861e661af3435eb1536a58b"
+      }
+    }
+  },
+  "dataconnectEmulatorConfig": {}
+}
