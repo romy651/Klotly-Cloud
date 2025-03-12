@@ -75,7 +75,7 @@ exports.sendFCMNotification = onCall(async (data, context) => {
         body: data.data.data.body,
         title: data.data.data.title,
       },
-      android: {
+      android: { 
         notification: {
           icon: 'notification_icon',
           sound: 'sound.mp3',
@@ -133,7 +133,6 @@ exports.sendFCMNotification = onCall(async (data, context) => {
   }
 });
 
-/*
 
   const headers = {
     Authorization: `Bearer ${accessToken.access_token}`,
@@ -227,8 +226,6 @@ exports.sendFCMNotification = onCall(async (data, context) => {
       'Failed to send FCM message.'
     );
   }
-
-*/
 
 exports.streamToken = onRequest(async (req, res) => {
   // Get these values from your GetStream.io Dashboard
