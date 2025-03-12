@@ -1,5 +1,5 @@
 const stripeSecretKey =
-  'sk_test_51Ow9TtRtLLsGzDAPmfsftMHPqNPT1fzBLsw7n4RJx18vdVvcSmzlcHbLAdqNt2ZyYEKG1Ua40agBJjPs52NcNlsO00vUqQBKSB';
+  'YOUR STRIPE API KEY';
 
 const { initializeApp } = require('firebase-admin/app');
 const { getFirestore } = require('firebase-admin/firestore');
@@ -26,7 +26,7 @@ const { connect } = require('getstream');
 
 const firebaseConfig = {
   databaseURL:
-    'https://buzzmeet-3999d-default-rtdb.europe-west1.firebasedatabase.app/',
+    'YOUR FIREBASE DB URL',
 };
 
 const app = initializeApp(firebaseConfig);
@@ -229,11 +229,7 @@ exports.sendFCMNotification = onCall(async (data, context) => {
 
 exports.streamToken = onRequest(async (req, res) => {
   // Get these values from your GetStream.io Dashboard
-  const client = connect(
-    'dfdakr784rjb',
-    '786dmq6r576jne2vqybr5sefnrccx5e53wkpx8br5q9rker2jngssesxdqq39383',
-    '1321881'
-  );
+  const client = connect(YOUR GET STREAM CREDENTIALS);
 
   const userId = req.headers.uid;
 
